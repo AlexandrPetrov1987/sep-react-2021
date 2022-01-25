@@ -6,6 +6,8 @@ function App() {
             <h1>Hello react</h1>
             <h1>Hello react</h1>
             <h1>Hello react</h1>
+            <h1>Hello react</h1>
+            <h1>Hello react</h1>
         </div>
     );
 }
