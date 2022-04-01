@@ -1,0 +1,14 @@
+h2 {
+    color : brown;
+    width: 200px;
+}
+p {
+    color: blueviolet;
+    width: 400px;
+}
+.foo {
+    background-color: silver;
+}
+.bar {
+    background-color: cornflowerblue;
+}
