@@ -1,11 +1,17 @@
-function Characters(props) {
-    const { name, desc, picture, alt } = props;
-    return <div>
-        <h2>{name}</h2>
-        <p>{desc}</p>
-        <img src={picture} alt={alt}/>
-    </div>
+function Character(props) {
+
+    const {id, name, status, species, gender, image, alt} = props;
+    return (
+        <div>
+            <h2>{id}</h2>
+            <h2>{name}</h2>
+            <p>{status}</p>
+            <p>{species}</p>
+            <p>{gender}</p>
+            <img src={image} alt={alt}/>
+        </div>
+    )
 
 }
 
-export default Characters;
+export default Character;
