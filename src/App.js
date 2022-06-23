@@ -1,12 +1,14 @@
-import './App.css';
+import {Rockets} from "./components";
 
-function App() {
+const App = () => {
+
     return (
-        <div className="App">
-            <h1>Hello</h1>
-            <h1>Hello</h1>
+
+        <div>
+            <Rockets/>
         </div>
+
     );
-}
+};
 
 export default App;
