@@ -18,9 +18,7 @@ const Rockets = () => {
 
         <div>
             {
-                rockets.map((rocket, index) => <Rocket key={index} mission_name={rocket.mission_name}
-                                                        launch_year={rocket.launch_year}
-                                                        mission_patch_small={rocket.links.mission_patch_small}/>)
+                rockets.map((rocket, index) => <Rocket key={index} item={rocket}/>)
             }
         </div>
     );

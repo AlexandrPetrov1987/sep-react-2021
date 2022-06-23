@@ -1,4 +1,4 @@
-const Rocket = ({mission_name, launch_year, mission_patch_small}) => {
+const Rocket = ({item: {mission_name, launch_year, links: {mission_patch_small}}}) => {
 
     return (
 
@@ -6,7 +6,7 @@ const Rocket = ({mission_name, launch_year, mission_patch_small}) => {
 
             <div>{mission_name}</div>
             <div>{launch_year}</div>
-            <img src={mission_patch_small} alt={mission_patch_small}/>
+            <img src={mission_patch_small} alt={mission_name}/>
 
         </div>
 
