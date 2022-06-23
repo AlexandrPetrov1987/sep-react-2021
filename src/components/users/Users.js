@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 import {User} from "../user/User";
 import {UserDetails} from "../userDetails/UserDetails";
-import {getUsers} from "../../services/userService";
+import {getUsers} from "../../services";
 
 const Users = () => {
 
