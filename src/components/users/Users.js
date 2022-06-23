@@ -6,7 +6,7 @@ import {UserDetails} from "../userDetails/UserDetails";
 const Users = () => {
 
     const [users, setUsers] = useState([]);
-    const [user, setUser] = useState({});
+    const [user, setUser] = useState(null);
 
     useEffect(() => {
 
@@ -25,14 +25,15 @@ const Users = () => {
         <div>
 
             {
-                user.id && <UserDetails key={user.id}
-                                        id={user.id} name={user.name}
-                                        username={user.username}
-                                        email={user.email}/>
+                user && <UserDetails
+                    id={user.id}
+                    name={user.name}
+                    username={user.username}
+                    email={user.email}/>
             }
             <hr/>
             {
-                users.map((user, index) => <User key={index} item={user} userButton={userButton}/>)
+                users.map((user) => <User key={user.id} item={user} userButton={userButton}/>)
             }
 
         </div>
