@@ -1,14 +1,14 @@
-const UserDetails = (item) => {
+const UserDetails = (props) => {
 
-    const {id, name, username, email} = item;
+    const {id, name, username, email} = props;
 
     return (
         <div>
 
-            <p>{id}</p>
-            <p>{name}</p>
+            <h2>{id}</h2>
+            <h2>{name}</h2>
             <p>{username}</p>
-            <p>{email}</p>
+            <div>{email}</div>
 
         </div>
     );
