@@ -25,10 +25,9 @@ const Users = () => {
 
             {
                 user && <UserDetails
-                    id={user.id}
-                    name={user.name}
-                    username={user.username}
-                    email={user.email}/>
+                    user={user}
+
+                />
             }
             <hr/>
             {
