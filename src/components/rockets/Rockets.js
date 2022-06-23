@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
 import {Rocket} from "../rocket/Rocket";
+import {getRockets} from "../../services";
 
 const Rockets = () => {
 
@@ -8,9 +9,7 @@ const Rockets = () => {
 
     useEffect(() => {
 
-        fetch('https://api.spacexdata.com/v3/launches/')
-            .then(value => value.json())
-            .then(value => setRockets(value.filter(value => value.launch_year !== '2020')));
+        getRockets().then(value => setRockets(value.filter(value => value.launch_year !== '2020')));
 
     }, [])
 
