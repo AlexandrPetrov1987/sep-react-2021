@@ -1,12 +1,16 @@
-import './App.css';
+import {Users} from "./components/users/Users";
 
-function App() {
+const App = () => {
+
     return (
-        <div className="App">
-            <h1>Hello</h1>
-            <h1>Hello</h1>
+
+        <div>
+
+            <Users/>
+
         </div>
+
     );
-}
+};
 
 export default App;
