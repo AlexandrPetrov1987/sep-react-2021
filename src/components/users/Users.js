@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 import {User} from "../user/User";
 import {UserDetails} from "../userDetails/UserDetails";
+import {getUsers} from "../../services/userService";
 
 const Users = () => {
 
@@ -10,9 +11,7 @@ const Users = () => {
 
     useEffect(() => {
 
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(value => value.json())
-            .then(value => setUsers(value))
+        getUsers().then(value => setUsers(value))
 
     }, []);
 
