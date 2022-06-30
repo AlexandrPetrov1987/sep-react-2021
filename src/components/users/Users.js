@@ -1,6 +1,6 @@
 import {useForm} from "react-hook-form";
 
-import {getUsers} from "../../services";
+import {createUsers} from "../../services";
 
 const Users = () => {
 
@@ -8,12 +8,12 @@ const Users = () => {
         defaultValues: {
             name: 'name',
             username: 'username',
-            email: 'email'
+            email: 'email@email'
         }
     });
 
     const submit = (obj) => {
-        getUsers(obj).then(result => console.log(result));
+        createUsers(obj).then(result => console.log(result));
     }
 
     return (

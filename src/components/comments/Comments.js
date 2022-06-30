@@ -1,19 +1,19 @@
 import {useForm} from "react-hook-form";
 
-import {getComments} from "../../services";
+import {createComments} from "../../services";
 
 const Comments = () => {
 
     const {register, handleSubmit, formState: {errors}} = useForm({
         defaultValues: {
             name: 'name',
-            email: 'email',
+            email: 'email@email',
             body: 'body'
         }
     });
 
     const submit = (obj) => {
-        getComments(obj).then(result => console.log(result));
+        createComments(obj).then(({data}) => console.log(data));
     }
 
     return (
