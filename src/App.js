@@ -9,6 +9,7 @@ import PostsCurrentComment from "./components/posts/PostsCurrentComment";
 export function App() {
     return (
         <div>
+
             <Routes>
                 <Route path={'/'} element={<MainLayout/>}>
                     <Route path={'todos'} element={<TodosPage/>}/>
@@ -18,6 +19,7 @@ export function App() {
                     </Route>
                 </Route>
             </Routes>
+
         </div>
     );
 }
