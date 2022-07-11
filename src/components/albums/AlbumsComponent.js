@@ -17,6 +17,7 @@ function AlbumsComponent() {
                 albums.map(value => <AlbumComponent item={value} key={value.id}/>)
             }
         </div>
+
     );
 }
 
