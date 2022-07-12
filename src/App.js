@@ -1,8 +1,18 @@
-export  function App() {
-	return (
-		<div>
-		App
+import React, {Component} from 'react';
 
-		</div>
-	);
+import {Comments, Posts} from "./components";
+
+
+
+class App extends Component {
+    render() {
+        return (
+            <div>
+                <Posts/>
+                <Comments/>
+            </div>
+        );
+    }
 }
+
+export default App;
