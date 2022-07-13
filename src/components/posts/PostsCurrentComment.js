@@ -11,7 +11,7 @@ function PostsCurrentComment() {
     const [posts,setPosts] = useState([]);
 
     useEffect(() => {
-        getPostCurrentComment(postId).then(value => setPosts([{...value}]))
+        getPostCurrentComment(postId).then(value => setPosts([value]))
     },[postId])
     return (
         <div>
