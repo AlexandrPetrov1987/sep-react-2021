@@ -1,8 +1,11 @@
-export  function App() {
-	return (
-		<div>
+import {CarForm, Cars} from "./components";
 
-
-		</div>
-	);
+export function App() {
+    return (
+        <div>
+            <CarForm/>
+            <br/>
+            <Cars/>
+        </div>
+    );
 }
