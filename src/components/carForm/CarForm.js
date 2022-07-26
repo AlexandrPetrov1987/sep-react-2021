@@ -5,13 +5,14 @@ import {useDispatch} from "react-redux";
 import {carActions} from "../../redux";
 
 const CarForm = () => {
-    const {register,reset,handleSubmit} = useForm();
+    const {register, reset, handleSubmit} = useForm();
+
     const dispatch = useDispatch();
 
-    const submit=async (newCar)=> {
-        dispatch(carActions.clearStatus(''))
-        await  dispatch(carActions.createNewCar({car:newCar}))
-        reset()
+    const submit = async (newCar) => {
+        dispatch(carActions.clearStatus(''));
+        await dispatch(carActions.createNewCar({car: newCar}));
+        reset();
     }
 
     return (
