@@ -10,3 +10,4 @@ const user = new User(12,'Vasya',13);
 
 console.log(user);
 
+
